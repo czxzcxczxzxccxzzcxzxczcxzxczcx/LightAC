@@ -7,12 +7,14 @@ global cps := 12
 global maxCPS := 20
 global minCPS := 1
 global delay := 1000 / cps
-global holdDelay := 140   
+global holdDelay := 140
+global maxHoldDelay := 1000
+global minHoldDelay := 0
 global pressTime := 0
 
 ; ===== Randomization Settings =====
 global randomizationEnabled := true
-global randomPercent := 12      ; default ±12%
+global randomPercent := 12
 global maxRandomPercent := 40
 global minRandomPercent := 0
 
@@ -49,7 +51,7 @@ UpdateDelay() {
 ; CPS CONTROLS
 ; =========================
 
-^=::   ; Ctrl + =
+^=::
 {
     global cps, maxCPS
     if (cps < maxCPS) {
@@ -60,7 +62,7 @@ UpdateDelay() {
     }
 }
 
-^-::   ; Ctrl + -
+^-::
 {
     global cps, minCPS
     if (cps > minCPS) {
@@ -75,7 +77,7 @@ UpdateDelay() {
 ; RANDOMIZATION CONTROLS
 ; =========================
 
-+=::   ; Shift + =
++=::
 {
     global randomPercent, maxRandomPercent
     if (randomPercent < maxRandomPercent) {
@@ -85,7 +87,7 @@ UpdateDelay() {
     }
 }
 
-+-::   ; Shift + -
++-::
 {
     global randomPercent, minRandomPercent
     if (randomPercent > minRandomPercent) {
@@ -95,7 +97,7 @@ UpdateDelay() {
     }
 }
 
-+`::  ; Shift + C → Toggle randomization
++`::
 {
     global randomizationEnabled
     randomizationEnabled := !randomizationEnabled
@@ -106,6 +108,30 @@ UpdateDelay() {
         ToolTip("Randomization OFF")
 
     SetTimer(() => ToolTip(), -1000)
+}
+
+; =========================
+; HOLD DELAY CONTROLS (NEW)
+; =========================
+
+!=::   ; Alt + =
+{
+    global holdDelay, maxHoldDelay
+    if (holdDelay < maxHoldDelay) {
+        holdDelay += 10
+        ToolTip("Hold Delay: " holdDelay " ms")
+        SetTimer(() => ToolTip(), -800)
+    }
+}
+
+!-::   ; Alt + -
+{
+    global holdDelay, minHoldDelay
+    if (holdDelay > minHoldDelay) {
+        holdDelay -= 10
+        ToolTip("Hold Delay: " holdDelay " ms")
+        SetTimer(() => ToolTip(), -800)
+    }
 }
 
 ; =========================
@@ -125,7 +151,7 @@ UpdateDelay() {
 
 CheckHold()
 {
-    global pressTime, holdDelay, clicking, delay, toggle
+    global pressTime, holdDelay, clicking, toggle
 
     if (!GetKeyState("LButton", "P")) {
         SetTimer(CheckHold, 0)
