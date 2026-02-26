@@ -3,6 +3,8 @@
 A lightweight Auto Hot Key auto clicker.
 Currently only supports Left click
 
+ONLY SUPPORTS AUTO HOT KEY VERSION 2
+
 # How to use
 - (Ctrl and `) to enable the auto clicker
 - (Ctrl and +) to increase CPS
