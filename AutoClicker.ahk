@@ -1,5 +1,3 @@
-; Left Click Auto Clicer v3 (adjustable randomization)
-
 #Requires AutoHotkey v2.0
 #Warn
 
