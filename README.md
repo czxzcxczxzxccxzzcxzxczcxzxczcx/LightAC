@@ -1,4 +1,4 @@
-# Auto Hot Key Auto Clicker v1
+# Light AC v2
 
 A lightweight Auto Hot Key auto clicker.
 Currently only supports Left click
