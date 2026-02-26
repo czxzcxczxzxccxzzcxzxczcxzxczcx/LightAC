@@ -2,12 +2,12 @@
 
 A lightweight Auto Hot Key auto clicker.
 
-Currently only supports Left click
-Runs on both 32 and 64 bit systems
-The EXE may false flag anti viruses
-It is safe and the source is public 
-
-ONLY SUPPORTS AUTO HOT KEY VERSION 2
+# Note before installing
+- Currently only supports Left click
+- Runs on both 32 and 64 bit systems
+- The EXE may false flag anti viruses
+- It is safe and the source is public 
+- ONLY SUPPORTS AUTO HOT KEY VERSION 2
 
 # How to use
 - (Ctrl and `) to enable the auto clicker
