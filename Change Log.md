@@ -1,6 +1,12 @@
+# LightAC v2.02
+- Should of patched out the bug where the auto clicker remained
+- Added a application gui
+- Added a window whitelist system
+- Added the Right click autoclicker
+
 # LightAC v2.01
-Made it so you can increase the hold to start delay
-This makes it harder for the auto clicker to glitch
+- Made it so you can increase the hold to start delay
+- This makes it harder for the auto clicker to glitch
 
 # LightAC v2
-LightAC is now released
+- LightAC is now released
