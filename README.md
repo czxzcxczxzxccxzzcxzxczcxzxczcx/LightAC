@@ -2,6 +2,11 @@
 
 A lightweight Auto Hot Key auto clicker.
 
+# Features
+- Hold to click auto clicker for both left and right mouse clicks
+- Window whitelist system to prevent auto clicker in other tabs
+- A simple and responsive graphics interface
+
 # Note before installing
 - Runs on both 32 and 64 bit systems
 - The EXE may false flag anti viruses
