@@ -12,7 +12,7 @@ A lightweight Auto Hot Key auto clicker.
 - Runs on both 32 and 64 bit systems
 - The EXE may false flag anti viruses
 - It is safe and the source is public 
-- ONLY SUPPORTS AUTO HOT KEY VERSION 2
+- ONLY SUPPORTS AUTO HOT KEY VERSION 2   
 https://github.com/AutoHotkey/AutoHotkey/releases
 
 # How to use
