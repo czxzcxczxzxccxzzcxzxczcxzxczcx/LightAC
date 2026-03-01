@@ -13,6 +13,7 @@ A lightweight Auto Hot Key auto clicker.
 - The EXE may false flag anti viruses
 - It is safe and the source is public 
 - ONLY SUPPORTS AUTO HOT KEY VERSION 2
+https://github.com/AutoHotkey/AutoHotkey/releases
 
 # How to use
 - (Right Ctrl and i) to enable the left click auto clicker
